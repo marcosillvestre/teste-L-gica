@@ -90,7 +90,6 @@ routes.get("/csv", async (req, res) => {
         return res.status(201).json(data)
 
     } catch (error) {
-        console.log(error)
         return res.status(500).json({ mssage: "File not write" })
 
     }
